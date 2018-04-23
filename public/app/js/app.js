@@ -3,7 +3,7 @@ var App = angular.module('ChatRoom',['ngResource','ngRoute','ngStorage','socket.
 	$rootScope.baseUrl = 'http://localhost:8282/'; //Applihttp://localhost:8282/cation URL
 }]);
 App.config(function ($routeProvider, $socketProvider){
-	$socketProvider.setConnectionUrl('http://localhost:8282'); // Socket URL
+	$socketProvider.setConnectionUrl('http://localhost:8282/'); // Socket URL
 
 	$routeProvider	// AngularJS Routes
 	.when('/v1/', {
